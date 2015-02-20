@@ -1,0 +1,47 @@
+/*botões*/
+.btn-flat(@color, @w, @colorFont, @font, @height) {
+  height: @height;
+  background-color: @color;
+  width: @w;
+  border-right: 0;
+  border: none;
+  box-shadow: none;
+  color: @colorFont;
+  text-decoration: none;
+  font-size: @font;
+}
+.btn-offer {
+  @width: 222px;
+  .btn-flat(@strongCyan,@width, @white, @font18, 49px);
+  margin-top: 13px;
+  padding-top: 13px;
+  .element-inline-block;
+  .txt-upper;
+  &:hover {
+    color: @white;
+    .decoration-none;
+  }
+  &:focus {
+    color: @white;
+    .decoration-none;
+  }
+}
+.btn-offer--outher-offer {
+  @width: 100%;
+  .btn-flat(@darkCyan,@width, @white, @font18, 49px);
+  margin-top: 13px;
+  padding-top: 13px;
+  .element-inline-block;
+  .txt-upper;
+  &:hover {
+    color: @white;
+    .decoration-none;
+  }
+  &:focus {
+    color: @white;
+    .decoration-none;
+  }
+}
+.btn-enviar {
+  .btn-flat(@white, 220px, @strongCyan, 20px, 49px);
+}

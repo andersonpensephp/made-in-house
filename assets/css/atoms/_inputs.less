@@ -1,0 +1,47 @@
+.input-flat(@height, @width){
+  width: @width;
+  height: @height;
+  border: 1px solid #fff;
+}
+.form-control.input-form {
+  .input-flat(49px, 100%);
+  background: transparent;
+  border-radius: 0;
+  z-index: 2;
+}
+.box-input-form input,
+.box__textareaform textarea {
+  font-size: 20px;
+  color: @white;
+}
+
+/*Label com efeito*/
+.box-input-form .label__efect,
+.box__textareaform .label__efect {
+  color: @white;
+  font-size: 20px;
+  top: 25%;
+  left: 30px;
+  .transition();
+  z-index: 1;
+}
+.label__efect--focus,
+.label__efect--focus2 {
+  left: 15px !important;
+  font-size: 13px !important;
+}
+.label__efect--focus {
+  top: -36% !important;
+}
+.box__textareaform .label__efect--focus2 {
+  top: 12%;
+}
+.box__textareaform textarea.form-control {
+  .input-flat(200px, 100%);
+  background: transparent;
+  border-radius: 0;
+  z-index: 2;
+}
+.box__textareaform textarea {
+  .top__50;
+}

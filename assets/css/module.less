@@ -1,0 +1,46 @@
+/***MODULE HOME***/
+/*titulos*/
+.subtittle (@color) {
+  border-top: 1px solid #dbdbdb;
+  .p-relative;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  & .subtittle {
+    color: @color;
+    margin-top: -18px;
+    display: inline-block;
+    background: #f7f7f7;
+    vertical-align: middle;
+    padding: 0 30px;
+    .txt-upper;
+  }
+}
+
+.container-subtittle {
+  .subtittle(@strongCyan);
+}
+.container-subtittle-other-offer {
+  .subtittle(@VeryDarkGrayish);
+}
+
+/*slide proveniente do bootstrap (customizando)*/
+.carousel .carousel-indicators {
+  bottom: 0;
+}
+& .carousel .carousel-indicators .active {
+  background-color: @veryLightGray;
+}
+.carousel .carousel-control {
+  .element-invisible;
+}
+
+.container-offer-see {
+  margin: 30px 0;
+}
+
+.container-other-offer .thumbnail {
+  background: none;
+  border: none;
+}
